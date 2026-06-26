@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELAI — Links</title>
+<meta name="description" content="VELAI — AI virtual creator | ของดีที่เลือกมาแล้วสัปดาห์นี้">
+<style>
+  :root {
+    --bg: #16130f;
+    --card: #1f1b15;
+    --gold: #c9a96e;
+    --ivory: #f4f0e9;
+    --muted: #a09687;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ivory);
+    font-family: "Sukhumvit Set", -apple-system, "Helvetica Neue", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+  .wrap { width: 100%; max-width: 420px; text-align: center; }
+  .avatar {
+    width: 96px; height: 96px; border-radius: 50%;
+    border: 2px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 36px; color: var(--gold); letter-spacing: 2px;
+    background: var(--card);
+    overflow: hidden;
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  h1 { font-size: 22px; letter-spacing: 6px; color: var(--gold); font-weight: 600; }
+  .tagline { color: var(--muted); font-size: 13px; margin: 8px 0 4px; }
+  .ai-badge {
+    display: inline-block; font-size: 11px; color: var(--muted);
+    border: 1px solid var(--muted); border-radius: 999px;
+    padding: 3px 12px; margin: 8px 0 24px;
+  }
+  .section-label {
+    color: var(--gold); font-size: 12px; letter-spacing: 3px;
+    text-transform: uppercase; margin: 28px 0 12px;
+  }
+  .card {
+    display: block; text-decoration: none; color: var(--ivory);
+    background: var(--card);
+    border: 1px solid rgba(201, 169, 110, 0.35);
+    border-left: 3px solid var(--gold);
+    border-radius: 12px;
+    padding: 16px 18px; margin-bottom: 12px;
+    text-align: left;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--gold); }
+  .card .name { font-size: 15px; font-weight: 600; }
+  .card .meta { display: flex; justify-content: space-between; align-items: baseline; margin-top: 6px; }
+  .card .price { color: var(--gold); font-size: 17px; font-weight: 700; }
+  .card .compare { color: var(--muted); font-size: 12px; }
+  .card .shop { color: var(--muted); font-size: 11px; margin-top: 8px; }
+  .social { display: flex; gap: 12px; justify-content: center; margin-top: 8px; }
+  .social a {
+    color: var(--ivory); text-decoration: none; font-size: 13px;
+    border: 1px solid rgba(201, 169, 110, 0.35); border-radius: 999px;
+    padding: 8px 20px;
+  }
+  .social a:hover { border-color: var(--gold); color: var(--gold); }
+  .disclosure { color: var(--muted); font-size: 11px; margin-top: 36px; line-height: 1.7; }
+  .empty { color: var(--muted); font-size: 13px; padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="avatar" id="avatar">V</div>
+  <h1>VELAI</h1>
+  <div class="tagline">skin is the outfit · everyday glow</div>
+  <div class="ai-badge">🤍 AI-generated virtual creator</div>
+
+  <div class="social" id="socials"></div>
+
+  <div class="section-label" id="picks-label">This Week's Picks</div>
+  <div id="products"><div class="empty">กำลังโหลด...</div></div>
+
+  <div class="disclosure">
+    ลิงก์สินค้าเป็น affiliate link — VELAI ได้รับค่าแนะนำจาก Shopee หากซื้อผ่านลิงก์
+    โดยราคาที่คุณจ่ายเท่าเดิม · สินค้าคัดจากเรตติ้งและยอดขายจริง ไม่ใช่รีวิวจากการใช้งาน
+  </div>
+</div>
+
+<script>
+fetch("products.json?t=" + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    const s = data.socials || {};
+    const socialEl = document.getElementById("socials");
+    const links = [];
+    if (s.instagram) links.push(`<a href="${s.instagram}" target="_blank" rel="noopener">Instagram</a>`);
+    if (s.pinterest) links.push(`<a href="${s.pinterest}" target="_blank" rel="noopener">Pinterest</a>`);
+    socialEl.innerHTML = links.join("");
+
+    const el = document.getElementById("products");
+    const items = (data.products || []).filter(p => p.link && !p.link.includes("..."));
+    if (!items.length) {
+      el.innerHTML = '<div class="empty">สัปดาห์นี้ยังไม่มีของแนะนำ — ตามดูใน Instagram ก่อนนะ</div>';
+      return;
+    }
+    el.innerHTML = items.map(p => `
+      <a class="card" href="${p.link}" target="_blank" rel="noopener sponsored">
+        <div class="name">${p.name}</div>
+        <div class="meta">
+          <span class="price">฿${Number(p.price).toLocaleString()}</span>
+          <span class="compare">${p.comparison || ""}</span>
+        </div>
+        <div class="shop">ซื้อใน Shopee →</div>
+      </a>`).join("");
+  })
+  .catch(() => {
+    document.getElementById("products").innerHTML =
+      '<div class="empty">โหลดรายการไม่สำเร็จ</div>';
+  });
+</script>
+</body>
+</html>
