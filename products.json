@@ -1,21 +1,31 @@
 {
-  "updated": "2026-06-26T14:30:00+07:00",
-  "week": "2026-W27",
+  "updated": "2026-06-27",
+  "current_week": "2026-W27",
   "socials": {
-    "instagram": "",
+    "instagram": "https://www.instagram.com/velai.th/",
     "pinterest": ""
   },
   "products": [
     {
-      "name": "VC Vit C Bio Face Serum เซรั่มวิตซีน้องฉัตร 10 มล.",
+      "week": "2026-W27",
+      "category": "beauty",
+      "name": "เซรั่มวิตซี VC Bio Face Serum 10 มล.",
       "price": 145,
-      "comparison": "เซรั่มวิตซี 10ml ฿145 — ถูกกว่าเซรั่มวิตามินซีแบรนด์เคาน์เตอร์หลายเท่า · เรตติ้ง 4.9 ขายแล้ว 10,000+",
+      "rating": 4.9,
+      "sold": "10k+",
+      "note": "ถูกกว่าเซรั่มวิตซีเคาน์เตอร์หลายเท่า",
+      "image": "img/serum.jpg",
       "link": "https://s.shopee.co.th/6L24geF0NC?sub_id1=2026w26_s4_hub"
     },
     {
-      "name": "ลูกกลิ้งหยกโรสควอตซ์ + กัวซาหัวใจ นวดหน้า DECINIEE (พร้อมกล่อง)",
+      "week": "2026-W27",
+      "category": "beauty",
+      "name": "ลูกกลิ้งหยกโรสควอตซ์ DECINIEE นวดหน้า",
       "price": 220,
-      "comparison": "dupe ของ jade roller เคาน์เตอร์หลักพัน · เรตติ้ง 4.8 ขายแล้ว 60,000+",
+      "rating": 4.8,
+      "sold": "60k+",
+      "note": "dupe ของ jade roller หลักพัน",
+      "image": "img/roller.jpg",
       "link": "https://s.shopee.co.th/4VaQWCp4L3?sub_id1=2026w26_s5_hub"
     }
   ]
