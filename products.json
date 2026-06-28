@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27",
+  "updated": "2026-06-28",
   "current_week": "2026-W27",
   "socials": {
     "instagram": "https://www.instagram.com/velai.th/",
@@ -27,6 +27,28 @@
       "note": "dupe ของ jade roller หลักพัน",
       "image": "img/roller.jpg",
       "link": "https://s.shopee.co.th/4VaQWCp4L3?sub_id1=2026w26_s5_hub"
+    },
+    {
+      "week": "2026-W27",
+      "category": "fashion",
+      "name": "รองเท้าผ้าใบ retro ทรงสปอร์ต (ขาว/เทา)",
+      "price": 289,
+      "rating": 4.9,
+      "sold": 3000,
+      "note": "ทรงคล้าย NB530 ราคา ~1/10 · ผ้าตาข่ายระบายอากาศ",
+      "image": "img/sneakers-retro.jpg",
+      "link": "https://s.shopee.co.th/80AdbkI5Z2?sub_id1=2026w26_s4_hub"
+    },
+    {
+      "week": "2026-W27",
+      "category": "fashion",
+      "name": "กระเป๋าผ้าแคนวาส ทรงโท้ท สีเขียวเสจ",
+      "price": 158,
+      "rating": 4.8,
+      "sold": 157,
+      "note": "จุเยอะ ทรงโท้ทมินิมอล · พรีออเดอร์ ~10 วัน",
+      "image": "img/canvas-tote.jpg",
+      "link": "https://s.shopee.co.th/3g1eSGLdrt?sub_id1=2026w26_s5_hub"
     }
   ]
 }
