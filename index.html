@@ -171,6 +171,8 @@ function render() {
 
   const byWeek = {};
   items.forEach(p => { (byWeek[p.week] = byWeek[p.week] || []).push(p); });
+  // ของใหม่อยู่บนเสมอ — เรียงในแต่ละสัปดาห์ตาม added (ISO) ใหม่→เก่า (ไม่มี added = ล่างสุด)
+  Object.values(byWeek).forEach(list => list.sort((a, b) => (b.added || "").localeCompare(a.added || "")));
   const weeks = Object.keys(byWeek).sort().reverse().slice(0, MAX_WEEKS);
   const current = STATE.current && weeks.includes(STATE.current) ? STATE.current : weeks[0];
 
