@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-28",
-  "current_week": "2026-W27",
+  "updated": "2026-07-03",
+  "current_week": "2026-W28",
   "socials": {
     "instagram": "https://www.instagram.com/velai.th/",
     "pinterest": "https://www.pinterest.com/kungtenpr/"
@@ -53,6 +53,30 @@
       "image": "img/canvas-tote.jpg",
       "link": "https://s.shopee.co.th/3g1eSGLdrt?sub_id1=2026w26_s5_hub",
       "added": "2026-06-28"
+    },
+    {
+      "week": "2026-W28",
+      "added": "2026-07-03",
+      "category": "เสื้อผ้า",
+      "name": "คาร์ดิแกนคอกลม ผ้าไหมพรมนิ่ม GREAT BKK (อก 38)",
+      "price": 259,
+      "rating": 4.9,
+      "sold": 1300,
+      "note": "ผ้าไหมพรมนุ่ม 19 สีพาสเทล จากป้าย ฿690 (-63%)",
+      "image": "img/cardigan-pastel.jpg",
+      "link": "https://s.shopee.co.th/80AmJnTxZJ?sub_id1=2026w28_s4_hub"
+    },
+    {
+      "week": "2026-W28",
+      "added": "2026-07-03",
+      "category": "กระเป๋า",
+      "name": "Louis Montini Fluffy กระเป๋าสะพายมินิ ทรงฟองน้ำ FFB11",
+      "price": 348,
+      "rating": 4.9,
+      "sold": 372,
+      "note": "กระเป๋าฟองน้ำมินิ มีจี้เมฆ Shopee Mall ของแท้",
+      "image": "img/fluffy-bag.jpg",
+      "link": "https://s.shopee.co.th/7fXvvMnCEi?sub_id1=2026w28_s5_hub"
     }
   ]
 }
