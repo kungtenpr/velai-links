@@ -1,11 +1,35 @@
 {
-  "updated": "2026-07-03",
-  "current_week": "2026-W28",
+  "updated": "2026-07-07",
+  "current_week": "2026-W29",
   "socials": {
     "instagram": "https://www.instagram.com/velai.th/",
     "pinterest": "https://www.pinterest.com/kungtenpr/"
   },
   "products": [
+    {
+      "week": "2026-W29",
+      "category": "fashion",
+      "name": "กระโปรงลายสก๊อต จีบ JK เทนนิส",
+      "price": 135,
+      "rating": 4.6,
+      "sold": "975 รีวิว",
+      "note": "ทรง JK เก็บทรงดี ถูกกว่าร้านดัง 2-3 เท่า",
+      "image": "img/plaid-skirt.jpg",
+      "link": "https://s.shopee.co.th/1qaF6JmGrx?sub_id1=2026w29_s4_hub",
+      "added": "2026-07-07"
+    },
+    {
+      "week": "2026-W29",
+      "category": "bag",
+      "name": "COWEC YCAKI กระเป๋าสะพายมินิ monogram",
+      "price": 197,
+      "rating": 4.8,
+      "sold": "219 รีวิว",
+      "note": "ลาย monogram ทอ คล้ายแบรนด์หรูราคาหลักหมื่น",
+      "image": "img/monogram-bag.jpg",
+      "link": "https://s.shopee.co.th/LlRJUY0l6?sub_id1=2026w29_s5_hub",
+      "added": "2026-07-07"
+    },
     {
       "week": "2026-W27",
       "category": "beauty",
