@@ -1,11 +1,35 @@
 {
-  "updated": "2026-07-07",
-  "current_week": "2026-W29",
+  "updated": "2026-07-14",
+  "current_week": "2026-W30",
   "socials": {
     "instagram": "https://www.instagram.com/velai.th/",
     "pinterest": "https://www.pinterest.com/kungtenpr/"
   },
   "products": [
+    {
+      "week": "2026-W30",
+      "added": "2026-07-14",
+      "category": "เสื้อผ้า",
+      "name": "avocado Jammy เสื้อนิตครอปคอปาด (8 สี)",
+      "price": 480,
+      "rating": null,
+      "sold": null,
+      "note": "นิตทรงสวย dupe งานนิตมินิมอลหลักพัน มี 8 สีมิกซ์ได้เยอะ",
+      "image": "img/avocado-knit-crop.jpg",
+      "link": "https://s.shopee.co.th/18mLgWU6Y?sub_id1=2026w29_s4_hub"
+    },
+    {
+      "week": "2026-W30",
+      "added": "2026-07-14",
+      "category": "รองเท้า",
+      "name": "MiSTERY รองเท้าผ้าใบ CAKE สีขาว",
+      "price": 450,
+      "rating": null,
+      "sold": null,
+      "note": "ผ้าใบพื้นหนาทรงคลีน ร้าน Shopee Mall ของแท้ คืนได้",
+      "image": "img/mistery-sneakers.jpg",
+      "link": "https://s.shopee.co.th/9UzrfTQsIj?sub_id1=2026w29_s5_hub"
+    },
     {
       "week": "2026-W29",
       "category": "fashion",
