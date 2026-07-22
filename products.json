@@ -1,11 +1,35 @@
 {
-  "updated": "2026-07-14",
-  "current_week": "2026-W30",
+  "updated": "2026-07-22",
+  "current_week": "2026-W31",
   "socials": {
     "instagram": "https://www.instagram.com/velai.th/",
     "pinterest": "https://www.pinterest.com/kungtenpr/"
   },
   "products": [
+    {
+      "week": "2026-W31",
+      "added": "2026-07-22",
+      "category": "กระเป๋า",
+      "name": "Yuedpao Fluffy Gozy Bag กระเป๋าทำงาน puffy tote",
+      "price": 670,
+      "rating": 5.0,
+      "sold": 7000,
+      "note": "กระเป๋า puffy tote เบา จุเยอะ ดูเหมือนแบรนด์แพง Shopee Mall ส่งฟรี",
+      "image": "img/workbag.jpg",
+      "link": "https://s.shopee.co.th/1gHCueaSBC?sub_id1=2026w30_s4_hub"
+    },
+    {
+      "week": "2026-W31",
+      "added": "2026-07-22",
+      "category": "เครื่องประดับ",
+      "name": "สร้อยคอชื่อสั่งทำ งานสเตนเลส (ทองไม่ลอก)",
+      "price": 259,
+      "rating": 4.9,
+      "sold": 6000,
+      "note": "สร้อยชื่อสเตนเลสไม่ลอก ใส่อาบน้ำได้ ดึงลุคทำงานให้ดูแพง",
+      "image": "img/namenecklace.jpg",
+      "link": "https://s.shopee.co.th/1BKwKll5EM?sub_id1=2026w30_s5_hub"
+    },
     {
       "week": "2026-W30",
       "added": "2026-07-14",
